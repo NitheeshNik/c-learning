@@ -3,17 +3,16 @@
 
 int main()
 {
-    int principal = 0;       // P (initial money)
-    float interest_rate = 0; // r (annual interest rate)
-    int years = 0;           // t
-    int timesCompounded = 0; // n
-    char per = '%';
+    double principal = 0.0;     // P (initial money)
+    double interest_rate = 0.0; // r (annual interest rate)
+    int years = 0;              // t
+    int timesCompounded = 0;    // n
     double amount = 0.0;
 
     printf("Enter the pricipal (P): ");
-    scanf("%d", &principal);
-    printf("Enter the interest rate %c (r): ", per);
-    scanf("%f", &interest_rate);
+    scanf("%lf", &principal);
+    printf("Enter the interest rate %% (r): ");
+    scanf("%lf", &interest_rate);
     printf("Enter the # of years (t): ");
     scanf("%d", &years);
     printf("Enter # of times compounded per year (n): ");
