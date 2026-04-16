@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <string.h>
 
 int main()
 {
@@ -37,14 +38,14 @@ int main()
     printf("Enter you student or not(1 = true or 0 = false):");
     scanf("%d", &temp);
     isStudent = temp;
-    
+
     if (isStudent)
     {
         printf("You are a student\n");
-    }    
+    }
     else
     {
-        printf("You are NOT a student\n");
+        printf("You are NOT a student\n\n");
     }
 
     return 0;
