@@ -32,14 +32,16 @@ int main()
     }
 
     // STUDENT CODE
-    bool isStudent = true;
+    bool isStudent;
+    int temp;
     printf("Enter you student or not(1 = true or 0 = false):");
-    scanf("%d", &isStudent);
-
+    scanf("%d", &temp);
+    isStudent = temp;
+    
     if (isStudent)
     {
         printf("You are a student\n");
-    }
+    }    
     else
     {
         printf("You are NOT a student\n");
