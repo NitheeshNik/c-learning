@@ -7,7 +7,7 @@ int main()
     int choice;
 
     printf("Weight Conversion Calculator\n");
-    printf("Enter your choice (1 or 2): ");
+    printf("Enter your choice 1-lb and 2-kg (1 or 2): ");
     scanf("%d", &choice);
 
     if (choice == 1)
