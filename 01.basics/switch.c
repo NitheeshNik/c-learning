@@ -8,7 +8,7 @@ int main()
 
     char dayOfWeek = '\0';
 
-    printf("Enter a day of the week (M, T, W, R, F, S, U): ");
+    printf("Please select any character (M, T, W, R, F, S, U)");
     scanf("%c", &dayOfWeek);
 
     switch (dayOfWeek)
