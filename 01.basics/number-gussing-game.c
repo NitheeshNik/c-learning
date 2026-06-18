@@ -4,28 +4,34 @@
 
 int main()
 {
-    int x = 0;
-    int guess = 0;
+    int targetNumber, userGuess, attempts = 0;
 
-    printf("NUMBER GUSSING GAME\n");
     srand(time(NULL));
 
-    x = rand() % 10;
-    printf("%d\n", x);
-    printf("Enter your number: \n");
-    scanf("%d", &guess);
-    if (x > guess)
+    targetNumber = rand() % 10 + 1;
+
+    printf("%d\n", targetNumber);
+    printf("NUMBER GUSSING GAME\n");
+    do
     {
-        printf("Higer");
-    }
-    else if (x < guess)
-    {
-        printf("Lower");
-    }
-    else
-    {
-        printf("You win");
-    }
+        printf("Enter your number: \n");
+
+        scanf("%d", &userGuess);
+        attempts++;
+
+        if (targetNumber > userGuess)
+        {
+            printf("Higer\n");
+        }
+        else if (targetNumber < userGuess)
+        {
+            printf("Lower\n");
+        }
+        else
+        {
+            printf("You win\n");
+        }
+    } while (userGuess != targetNumber);
 
     return 0;
 }
