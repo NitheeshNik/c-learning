@@ -21,15 +21,15 @@ int main()
 
         if (targetNumber > userGuess)
         {
-            printf("Higer\n");
+            printf("Too high! Try again.\n");
         }
         else if (targetNumber < userGuess)
         {
-            printf("Lower\n");
+            printf("Too low! Try again.\n");
         }
         else
         {
-            printf("You win\n");
+            printf("Congratulations! You guessed the correct number in %d attempts.\n");
         }
     } while (userGuess != targetNumber);
 
