@@ -9,5 +9,6 @@ int main()
     printf("%s", arr[0]);
     printf("enter user name: ");
     scanf("%s", &name);
+    printf(name);
     return 0;
 }
